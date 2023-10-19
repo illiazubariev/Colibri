@@ -17,6 +17,10 @@
   font-family: "Inter", sans-serif;
 }
 
+li {
+  list-style: none;
+}
+
 header {
   background-color: var(--header-color);
 }

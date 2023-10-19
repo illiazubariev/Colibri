@@ -1,5 +1,47 @@
 header{
-    margin: 0;
-    padding: 0;
     background-color: var(--header-color);
+    height: 570px;
+    .menu{
+        display: flex;
+        justify-content: space-between;
+        width: 1170px;
+        margin-left: auto;
+        margin-right: auto;
+        ul{
+            display: flex;
+            justify-content: space-around;
+            margin-top: 31px;
+            li a{
+                color: var(--textW-color);
+                font-size: 20px;
+                text-decoration: none;
+            } 
+        }
+        ul:last-child li{
+            margin-left: 30px;
+        }
+        ul:last-child li a {
+            font-size: 16px;
+        }
+
+    }
+    .face{
+        font-style: normal;
+        height: 580px;
+        width: 1170px;
+        background-image: url(/assets/images/image.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        margin-left: auto;
+        margin-right: auto;
+        position: relative;
+        top: -10px;
+        h1{
+            font-size: 70px;
+            font-weight: 500;
+            color: var(--textW-color);
+            position: relative;
+            left: 70px; top: 200px;
+        }
+    }
 }
