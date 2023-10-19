@@ -1,4 +1,16 @@
 @import url("https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css");
+:root {
+  --bg-color: #000000;
+  --header-color: #000000;
+  --text-color: #000000;
+  --textW-color: #ffffff;
+  --textcard-color: #ffffff;
+  --lineW-color: #ffffff;
+  --line-color: #000000;
+  --buton-color: #000000;
+  --footer-color: #000000;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -6,5 +18,5 @@
 }
 
 header {
-  background-color: aqua;
+  background-color: var(--header-color);
 }
