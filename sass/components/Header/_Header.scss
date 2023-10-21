@@ -1,6 +1,8 @@
 header{
     background-color: var(--header-color);
     height: 570px;
+    z-index: 2;
+    position: relative;
     .menu{
         display: flex;
         justify-content: space-between;
