@@ -49,7 +49,7 @@ main{
             width: 50%;
         }
     }
-    .button{
+    .button_1{
         background-color: var(--button-color);
         display: flex;
         width: 170px;
@@ -63,7 +63,7 @@ main{
             margin-right: 10px;
         }
     }
-    .cards{
+    .cards_1{
         display: grid;
         grid-template-areas: 
         'card_1 card_2 card_3 card_4';
@@ -180,5 +180,108 @@ main{
                 color: rgba(255, 255, 255, 0.652);
             }
         }
+    }
+    .brands{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 1000px;
+        margin-top: 100px;
+        margin-bottom: 100px;
+        .textarea_2{
+            display: flex;
+            flex-direction: column;
+            li:first-child{
+                font-size: 15px;
+                font-weight: 500;
+                margin-bottom: 30px;
+            }
+            li:last-child{
+                font-size: 34px;
+                font-weight: 500;
+            }
+        }
+        .logotips{
+            display: grid;
+            grid-template-areas: 
+            'logo_1 logo_2 logo_3'
+            'logo_4 logo_5 logo_6';
+            gap: 40px;
+        }
+    }
+    h3{
+        font-size: 48px;
+        font-weight: 500;
+        margin: 50px;
+    }
+    .cards_2{
+        display: flex;
+        justify-content: space-between;
+        gap: 30px;
+        ul li:first-child{
+            display: table-cell;
+            font-size: 14px;
+            font-weight: 400;
+            width: 124px;
+            height: 44px;
+            background-color: var(--bg-color);
+            text-align: center;
+            vertical-align: middle;
+            position: relative;
+            top: 44px;
+        }
+        ul li:last-child{
+            font-size: 20px;
+            font-weight: 500;
+            margin-top: 20px;
+        }
+    }
+    .button_2{
+        background-color: var(--button-color);
+        display: flex;
+        width: 170px;
+        height: 54px;
+        align-items: center;
+        justify-content: center;
+        margin: 100px;
+        li a{
+            color: var(--textW-color);
+            margin-right: 10px;
+        }
+    }
+    hr{
+        width: 1170px;
+        height: 0px;
+        border:  1px solid var(--text-color);
+        margin-bottom: 30px;
+    }
+    .workit{
+        ul{
+            width: 1170px;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            margin-bottom: 40px;
+            margin-top: 40px;
+        li:first-child{
+            font-size: 100px;
+            font-weight: 500;
+            z-index: 2;
+            margin-left: 30px;
+            }
+            li:nth-child(2){
+                position: relative;
+                left: -90px;
+                z-index: 1;
+            }
+        }
+        a li{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 250px;
+            width: 300px;
+        }
+
     }
 }

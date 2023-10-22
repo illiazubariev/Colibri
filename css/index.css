@@ -1,7 +1,7 @@
 @import url("https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css");
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
 :root {
-  --bg-color: #9c826e;
+  --bg-color: #8b7a5e;
   --header-color: #000000;
   --text-color: #000000;
   --textW-color: #ffffff;
@@ -150,7 +150,7 @@ main .textarea_1 ul:last-child li:last-child {
   font-weight: 400px;
   width: 50%;
 }
-main .button {
+main .button_1 {
   background-color: var(--button-color);
   display: -webkit-box;
   display: -ms-flexbox;
@@ -166,11 +166,11 @@ main .button {
   margin: 30px;
   margin-left: 230px;
 }
-main .button li a {
+main .button_1 li a {
   color: var(--textW-color);
   margin-right: 10px;
 }
-main .cards {
+main .cards_1 {
   display: grid;
   grid-template-areas: "card_1 card_2 card_3 card_4";
   gap: 30px;
@@ -181,7 +181,7 @@ main .cards {
   margin-top: 100px;
   margin-bottom: 20px;
 }
-main .cards ul {
+main .cards_1 ul {
   height: 400px;
   width: 304px;
   font-size: 20px;
@@ -197,23 +197,23 @@ main .cards ul {
       -ms-flex-pack: end;
           justify-content: flex-end;
 }
-main .cards ul li {
+main .cards_1 ul li {
   margin-left: 50px;
   margin-bottom: 20px;
 }
-main .cards .card_1 {
+main .cards_1 .card_1 {
   background-image: url(/assets/images/image_1.jpg);
   background-size: cover;
 }
-main .cards .card_2 {
+main .cards_1 .card_2 {
   background-image: url(/assets/images/image_2.jpg);
   background-size: cover;
 }
-main .cards .card_3 {
+main .cards_1 .card_3 {
   background-image: url(/assets/images/image_3.jpg);
   background-size: cover;
 }
-main .cards .card_4 {
+main .cards_1 .card_4 {
   background-image: url(/assets/images/image_4.jpg);
   background-size: cover;
 }
@@ -316,4 +316,134 @@ main .quote ul li:last-child {
   font-size: 15px;
   font-weight: 400;
   color: rgba(255, 255, 255, 0.652);
+}
+main .brands {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 1000px;
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+main .brands .textarea_2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+main .brands .textarea_2 li:first-child {
+  font-size: 15px;
+  font-weight: 500;
+  margin-bottom: 30px;
+}
+main .brands .textarea_2 li:last-child {
+  font-size: 34px;
+  font-weight: 500;
+}
+main .brands .logotips {
+  display: grid;
+  grid-template-areas: "logo_1 logo_2 logo_3" "logo_4 logo_5 logo_6";
+  gap: 40px;
+}
+main h3 {
+  font-size: 48px;
+  font-weight: 500;
+  margin: 50px;
+}
+main .cards_2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: 30px;
+}
+main .cards_2 ul li:first-child {
+  display: table-cell;
+  font-size: 14px;
+  font-weight: 400;
+  width: 124px;
+  height: 44px;
+  background-color: var(--bg-color);
+  text-align: center;
+  vertical-align: middle;
+  position: relative;
+  top: 44px;
+}
+main .cards_2 ul li:last-child {
+  font-size: 20px;
+  font-weight: 500;
+  margin-top: 20px;
+}
+main .button_2 {
+  background-color: var(--button-color);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 170px;
+  height: 54px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 100px;
+}
+main .button_2 li a {
+  color: var(--textW-color);
+  margin-right: 10px;
+}
+main hr {
+  width: 1170px;
+  height: 0px;
+  border: 1px solid var(--text-color);
+  margin-bottom: 30px;
+}
+main .workit ul {
+  width: 1170px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin-bottom: 40px;
+  margin-top: 40px;
+}
+main .workit ul li:first-child {
+  font-size: 100px;
+  font-weight: 500;
+  z-index: 2;
+  margin-left: 30px;
+}
+main .workit ul li:nth-child(2) {
+  position: relative;
+  left: -90px;
+  z-index: 1;
+}
+main .workit a li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 250px;
+  width: 300px;
 }
