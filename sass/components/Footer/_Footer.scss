@@ -1,0 +1,107 @@
+footer{
+    height: 642px;
+    display: flex;
+    justify-content: center;
+    background-color: var(--footer-color);
+    color: var(--textW-color);
+    position: relative;
+    overflow: hidden;
+    .lcol{
+
+        border-right: 1px solid var(--circle-color);
+        padding-right: 200px;
+        li{
+            margin-top: 70px;
+        }
+        li:first-child{
+            font-size: 34px;
+            font-weight: 500;
+        }
+        li:nth-child(2){
+            font-size: 14px;
+            font-weight: 400;
+        }
+        li:nth-child(3){
+            font-size: 17px;
+            font-weight: 500;
+        }
+    }
+    .rcol{
+        margin-top: 100px;
+        padding-left: 100px;
+        li{
+            font-size: 15px;
+            font-weight: 500;
+            color: var(--textS-color);
+            margin-bottom: 20px;
+        }
+        p{
+            border-bottom: 1px solid var(--textW-color);
+            padding-bottom: 10px;
+            input{
+                width: 570px;
+                height: 20px;
+                font-size: 20px;
+                background-color: transparent;
+                border: none;
+                box-sizing: border-box;
+                color: var(--textW-color);
+            }
+            input:focus{
+                font-size: 20px;
+                border: none;
+                background-color: var(--circle-color);
+                outline: none;
+                color: var(--textW-color);
+            }
+            button{
+                border: none;
+                background-color: transparent;
+                color: var(--textW-color);
+                cursor: pointer;
+            }
+            img{
+                margin-left: 5px;
+                transition: animation;
+            }
+            button:hover img{
+                animation: bounce 0.5s infinite ease-in;
+            }
+        }
+        nav{
+            margin-top: 150px;
+            height: 140px;
+            width: 600px;
+            display: flex;
+            flex-wrap: wrap;
+            li{
+                margin: 20px;
+                height: 20px;
+                a{
+                    font-size: 17px;
+                    font-weight: 500;
+                    text-decoration: none;
+                    color: var(--textW-color);
+
+                }
+            }
+        }
+        .C{
+            font-size: 14px;
+            font-weight: 400;
+            margin-top: 120px;
+            position: absolute;
+            margin-left: 700px;
+        }
+    }
+    .circle_4{
+        display: flex;
+        width: 641px;
+        height: 641px;
+        border-radius: 50%;
+        background-color: var(--circle-color);
+        position: absolute;
+        bottom: -200px;
+        margin-left: 1500px;
+    }
+}

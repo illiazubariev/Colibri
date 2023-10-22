@@ -5,12 +5,13 @@
   --header-color: #000000;
   --text-color: #000000;
   --textW-color: #ffffff;
+  --textS-color: #787878;
   --textcard-color: #ffffff;
   --lineW-color: #ffffff;
   --line-color: #000000;
   --button-color: #000000;
   --footer-color: #000000;
-  --circle-color: #82828282;
+  --circle-color: #b0b0b028;
 }
 
 * {
@@ -207,8 +208,8 @@ main .button_1 img {
   transition: animation, -webkit-animation;
 }
 main .button_1:hover img {
-  -webkit-animation: bounce 1.5s infinite ease-in-out;
-          animation: bounce 1.5s infinite ease-in-out;
+  -webkit-animation: bounce 0.5s infinite ease-in;
+          animation: bounce 0.5s infinite ease-in;
 }
 main .cards_1 {
   display: grid;
@@ -303,8 +304,8 @@ main .title_1 .button_2 img {
   transition: animation, -webkit-animation;
 }
 main .title_1 .button_2:hover img {
-  -webkit-animation: bounce 1.5s infinite ease-in-out;
-          animation: bounce 1.5s infinite ease-in-out;
+  -webkit-animation: bounce 0.5s infinite ease-in;
+          animation: bounce 0.5s infinite ease-in;
 }
 main .gallery {
   display: grid;
@@ -497,8 +498,8 @@ main .button_3 img {
   transition: animation, -webkit-animation;
 }
 main .button_3:hover img {
-  -webkit-animation: bounce 1.5s infinite ease-in-out;
-          animation: bounce 1.5s infinite ease-in-out;
+  -webkit-animation: bounce 0.5s infinite ease-in;
+          animation: bounce 0.5s infinite ease-in;
 }
 main hr {
   width: 1170px;
@@ -548,4 +549,124 @@ main .workit a {
 main .workit a:hover {
   -webkit-transform: translateX(5px);
           transform: translateX(5px);
+}
+
+footer {
+  height: 642px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: var(--footer-color);
+  color: var(--textW-color);
+  position: relative;
+  overflow: hidden;
+}
+footer .lcol {
+  border-right: 1px solid var(--circle-color);
+  padding-right: 200px;
+}
+footer .lcol li {
+  margin-top: 70px;
+}
+footer .lcol li:first-child {
+  font-size: 34px;
+  font-weight: 500;
+}
+footer .lcol li:nth-child(2) {
+  font-size: 14px;
+  font-weight: 400;
+}
+footer .lcol li:nth-child(3) {
+  font-size: 17px;
+  font-weight: 500;
+}
+footer .rcol {
+  margin-top: 100px;
+  padding-left: 100px;
+}
+footer .rcol li {
+  font-size: 15px;
+  font-weight: 500;
+  color: var(--textS-color);
+  margin-bottom: 20px;
+}
+footer .rcol p {
+  border-bottom: 1px solid var(--textW-color);
+  padding-bottom: 10px;
+}
+footer .rcol p input {
+  width: 570px;
+  height: 20px;
+  font-size: 20px;
+  background-color: transparent;
+  border: none;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  color: var(--textW-color);
+}
+footer .rcol p input:focus {
+  font-size: 20px;
+  border: none;
+  background-color: var(--circle-color);
+  outline: none;
+  color: var(--textW-color);
+}
+footer .rcol p button {
+  border: none;
+  background-color: transparent;
+  color: var(--textW-color);
+  cursor: pointer;
+}
+footer .rcol p img {
+  margin-left: 5px;
+  -webkit-transition: -webkit-animation;
+  transition: -webkit-animation;
+  transition: animation;
+  transition: animation, -webkit-animation;
+}
+footer .rcol p button:hover img {
+  -webkit-animation: bounce 0.5s infinite ease-in;
+          animation: bounce 0.5s infinite ease-in;
+}
+footer .rcol nav {
+  margin-top: 150px;
+  height: 140px;
+  width: 600px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+footer .rcol nav li {
+  margin: 20px;
+  height: 20px;
+}
+footer .rcol nav li a {
+  font-size: 17px;
+  font-weight: 500;
+  text-decoration: none;
+  color: var(--textW-color);
+}
+footer .rcol .C {
+  font-size: 14px;
+  font-weight: 400;
+  margin-top: 120px;
+  position: absolute;
+  margin-left: 700px;
+}
+footer .circle_4 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 641px;
+  height: 641px;
+  border-radius: 50%;
+  background-color: var(--circle-color);
+  position: absolute;
+  bottom: -200px;
+  margin-left: 1500px;
 }

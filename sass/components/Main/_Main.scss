@@ -79,7 +79,7 @@ main{
         }
     }
     .button_1:hover img{
-        animation: bounce 1.5s infinite ease-in-out;
+        animation: bounce 0.5s infinite ease-in;
     }
     .cards_1{
         display: grid;
@@ -152,7 +152,7 @@ main{
             }
         }
         .button_2:hover img{
-            animation: bounce 1.5s infinite ease-in-out;
+            animation: bounce 0.5s infinite ease-in;
         }
     }
     .gallery{
@@ -306,7 +306,7 @@ main{
         }
     }
     .button_3:hover img{
-        animation: bounce 1.5s infinite ease-in-out;
+        animation: bounce 0.5s infinite ease-in;
     }
     hr{
         width: 1170px;
