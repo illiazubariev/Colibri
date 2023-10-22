@@ -63,7 +63,7 @@ header .face {
   font-style: normal;
   height: 580px;
   width: 1170px;
-  background-image: url(/assets/images/image.jpg);
+  background-image: url(../assets/images/image.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   margin-left: auto;
@@ -242,19 +242,19 @@ main .cards_1 ul li {
   margin-bottom: 20px;
 }
 main .cards_1 .card_1 {
-  background-image: url(/assets/images/image_1.jpg);
+  background-image: url(../assets/images/image_1.jpg);
   background-size: cover;
 }
 main .cards_1 .card_2 {
-  background-image: url(/assets/images/image_2.jpg);
+  background-image: url(../assets/images/image_2.jpg);
   background-size: cover;
 }
 main .cards_1 .card_3 {
-  background-image: url(/assets/images/image_3.jpg);
+  background-image: url(../assets/images/image_3.jpg);
   background-size: cover;
 }
 main .cards_1 .card_4 {
-  background-image: url(/assets/images/image_4.jpg);
+  background-image: url(../assets/images/image_4.jpg);
   background-size: cover;
 }
 main .title_1 {
