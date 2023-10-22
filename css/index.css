@@ -80,6 +80,35 @@ header .face h1 {
   top: 200px;
 }
 
+@-webkit-keyframes bounce {
+  0% {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
+  50% {
+    -webkit-transform: translateY(-6px);
+            transform: translateY(-6px);
+  }
+  100% {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
+}
+
+@keyframes bounce {
+  0% {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
+  50% {
+    -webkit-transform: translateY(-6px);
+            transform: translateY(-6px);
+  }
+  100% {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
+}
 main {
   background-color: var(--bg-color);
   color: var(--text-color);
@@ -151,24 +180,35 @@ main .textarea_1 ul:last-child li:last-child {
   width: 50%;
 }
 main .button_1 {
-  background-color: var(--button-color);
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   width: 170px;
   height: 54px;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  background-color: var(--button-color);
+  text-decoration: none;
+  color: var(--textW-color);
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin: 30px;
   margin-left: 230px;
+  font-size: 16px;
+  font-weight: 500;
 }
-main .button_1 li a {
-  color: var(--textW-color);
-  margin-right: 10px;
+main .button_1 img {
+  margin-left: 10px;
+  -webkit-transition: -webkit-animation;
+  transition: -webkit-animation;
+  transition: animation;
+  transition: animation, -webkit-animation;
+}
+main .button_1:hover img {
+  -webkit-animation: bounce 1.5s infinite ease-in-out;
+          animation: bounce 1.5s infinite ease-in-out;
 }
 main .cards_1 {
   display: grid;
@@ -235,6 +275,37 @@ main .title_1 h2 {
 main .title_1 img:nth-child(2) {
   margin-left: 200px;
 }
+main .title_1 .button_2 {
+  width: 170px;
+  height: 54px;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  background-color: var(--button-color);
+  text-decoration: none;
+  color: var(--textW-color);
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 30px;
+  font-size: 16px;
+  font-weight: 500;
+  margin-left: 200px;
+}
+main .title_1 .button_2 img {
+  margin-left: 10px;
+  -webkit-transition: -webkit-animation;
+  transition: -webkit-animation;
+  transition: animation;
+  transition: animation, -webkit-animation;
+}
+main .title_1 .button_2:hover img {
+  -webkit-animation: bounce 1.5s infinite ease-in-out;
+          animation: bounce 1.5s infinite ease-in-out;
+}
 main .gallery {
   display: grid;
   grid-template-areas: "img_1 img_2" "img_3 img_4";
@@ -277,6 +348,7 @@ main .quote {
   width: 100%;
   height: 594px;
   margin-bottom: 20px;
+  overflow: hidden;
 }
 main .quote .vector_1 {
   position: relative;
@@ -316,6 +388,19 @@ main .quote ul li:last-child {
   font-size: 15px;
   font-weight: 400;
   color: rgba(255, 255, 255, 0.652);
+}
+main .quote .circle_2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  width: 641px;
+  height: 641px;
+  border-radius: 50%;
+  background-color: var(--circle-color);
+  position: relative;
+  top: -250px;
 }
 main .brands {
   display: -webkit-box;
@@ -385,24 +470,35 @@ main .cards_2 ul li:last-child {
   font-weight: 500;
   margin-top: 20px;
 }
-main .button_2 {
-  background-color: var(--button-color);
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+main .button_3 {
   width: 170px;
   height: 54px;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  background-color: var(--button-color);
+  text-decoration: none;
+  color: var(--textW-color);
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin: 100px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 30px;
+  font-size: 16px;
+  font-weight: 500;
 }
-main .button_2 li a {
-  color: var(--textW-color);
-  margin-right: 10px;
+main .button_3 img {
+  margin-left: 10px;
+  -webkit-transition: -webkit-animation;
+  transition: -webkit-animation;
+  transition: animation;
+  transition: animation, -webkit-animation;
+}
+main .button_3:hover img {
+  -webkit-animation: bounce 1.5s infinite ease-in-out;
+          animation: bounce 1.5s infinite ease-in-out;
 }
 main hr {
   width: 1170px;
@@ -410,31 +506,9 @@ main hr {
   border: 1px solid var(--text-color);
   margin-bottom: 30px;
 }
-main .workit ul {
+main .workit {
   width: 1170px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  margin-bottom: 40px;
-  margin-top: 40px;
-}
-main .workit ul li:first-child {
-  font-size: 100px;
-  font-weight: 500;
-  z-index: 2;
-  margin-left: 30px;
-}
-main .workit ul li:nth-child(2) {
-  position: relative;
-  left: -90px;
-  z-index: 1;
-}
-main .workit a li {
+  height: 400px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -444,6 +518,34 @@ main .workit a li {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  height: 250px;
-  width: 300px;
+}
+main .workit ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 40px;
+  margin-top: 40px;
+}
+main .workit ul li:first-child {
+  font-size: 100px;
+  font-weight: 500;
+  position: relative;
+  top: 50px;
+  z-index: 2;
+}
+main .workit ul li:last-child {
+  position: relative;
+  left: -50px;
+  top: -20px;
+  z-index: 1;
+}
+main .workit a {
+  -webkit-transition: -webkit-transform 0.5s;
+  transition: -webkit-transform 0.5s;
+  transition: transform 0.5s;
+  transition: transform 0.5s, -webkit-transform 0.5s;
+}
+main .workit a:hover {
+  -webkit-transform: translateX(5px);
+          transform: translateX(5px);
 }
