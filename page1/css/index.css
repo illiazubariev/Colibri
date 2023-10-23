@@ -74,6 +74,9 @@ header .menu_1 ul {
       justify-content: space-around;
   margin-top: 31px;
 }
+header .menu_1 ul li {
+  z-index: 1;
+}
 header .menu_1 ul li a {
   color: var(--text-color);
   font-size: 20px;
