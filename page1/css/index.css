@@ -234,7 +234,7 @@ main .button_2 {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
-  background-image: url(/page1/assets/icons/bg.svg);
+  background-image: url(../assets/icons/bg.svg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: 90%;
