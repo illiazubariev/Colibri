@@ -25,6 +25,13 @@ footer{
             font-size: 17px;
             font-weight: 500;
         }
+        li:nth-child(5){
+            img:hover{
+                transform: scale(1.1);
+                transition: 0.2s;
+            }
+        }
+
     }
     .rcol{
         margin-top: 100px;
@@ -84,6 +91,10 @@ footer{
                     color: var(--textW-color);
 
                 }
+            }
+            li:hover{
+                transform: scale(1.1);
+                transition: 0.2s;
             }
         }
         .C{

@@ -54,6 +54,12 @@ header .menu ul li a {
   font-size: 20px;
   text-decoration: none;
 }
+header .menu ul li:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
 header .menu ul:last-child li {
   margin-left: 30px;
 }
@@ -597,6 +603,12 @@ footer .lcol li:nth-child(3) {
   font-size: 17px;
   font-weight: 500;
 }
+footer .lcol li:nth-child(5) img:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
 footer .rcol {
   margin-top: 100px;
   padding-left: 100px;
@@ -664,6 +676,12 @@ footer .rcol nav li a {
   font-weight: 500;
   text-decoration: none;
   color: var(--textW-color);
+}
+footer .rcol nav li:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
 }
 footer .rcol .C {
   font-size: 14px;

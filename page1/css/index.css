@@ -325,6 +325,12 @@ footer .lcol li:nth-child(3) {
   font-size: 17px;
   font-weight: 500;
 }
+footer .lcol li:nth-child(5) img:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
 footer .rcol {
   margin-top: 100px;
   padding-left: 100px;
@@ -393,6 +399,12 @@ footer .rcol nav li a {
   text-decoration: none;
   color: var(--textW-color);
 }
+footer .rcol nav li:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
 footer .rcol .C {
   font-size: 14px;
   font-weight: 400;
@@ -400,7 +412,7 @@ footer .rcol .C {
   position: absolute;
   margin-left: 700px;
 }
-footer .circle_2 {
+footer .circle_4 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
