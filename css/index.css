@@ -308,11 +308,25 @@ main .title_1 .button_2:hover img {
           animation: bounce 0.5s infinite ease-in;
 }
 main .gallery {
-  display: grid;
-  grid-template-areas: "img_1 img_2" "img_3 img_4";
+  width: 1200px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding-top: 40px;
+  padding-bottom: 150px;
   gap: 40px;
-  margin-top: 100px;
-  margin-bottom: 100px;
+}
+main .gallery ul:first-child {
+  position: relative;
+  top: 100px;
+}
+main .gallery ul:nth-child(3) {
+  position: relative;
+  top: 100px;
 }
 main .gallery ul {
   display: -webkit-box;
