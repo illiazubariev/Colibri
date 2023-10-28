@@ -424,3 +424,152 @@ footer .circle_4 {
   bottom: -200px;
   margin-left: 1500px;
 }
+
+@media screen and (max-width: 600px) {
+  footer {
+    height: auto;
+    width: 600px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    background-color: var(--footer-color);
+    color: var(--textW-color);
+    position: relative;
+    overflow: hidden;
+  }
+  footer .lcol {
+    border-right: 1px solid var(--circle-color);
+    padding-right: 0px;
+    padding-left: 20px;
+  }
+  footer .lcol li {
+    margin-top: 30px;
+  }
+  footer .lcol li:first-child {
+    font-size: 24px;
+    font-weight: 500;
+  }
+  footer .lcol li:nth-child(2) {
+    font-size: 14px;
+    font-weight: 400;
+  }
+  footer .lcol li:nth-child(3) {
+    font-size: 17px;
+    font-weight: 500;
+  }
+  footer .lcol li:nth-child(5) img:hover {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+    -webkit-transition: 0.2s;
+    transition: 0.2s;
+  }
+  footer .rcol {
+    margin-top: 50px;
+    padding-left: 20px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  footer .rcol li {
+    font-size: 15px;
+    font-weight: 500;
+    color: var(--textS-color);
+    margin-bottom: 20px;
+  }
+  footer .rcol p {
+    border-bottom: 1px solid var(--textW-color);
+    padding-bottom: 10px;
+    width: 550px;
+  }
+  footer .rcol p input {
+    width: 400px;
+    height: 15px;
+    font-size: 15px;
+    background-color: transparent;
+    border: none;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    color: var(--textW-color);
+  }
+  footer .rcol p input:focus {
+    font-size: 15px;
+    border: none;
+    background-color: var(--circle-color);
+    outline: none;
+    color: var(--textW-color);
+  }
+  footer .rcol p button {
+    border: none;
+    background-color: transparent;
+    color: var(--textW-color);
+    cursor: pointer;
+  }
+  footer .rcol p img {
+    margin-left: 5px;
+    -webkit-transition: -webkit-animation;
+    transition: -webkit-animation;
+    transition: animation;
+    transition: animation, -webkit-animation;
+  }
+  footer .rcol p button:hover img {
+    -webkit-animation: bounce 0.5s infinite ease-in;
+            animation: bounce 0.5s infinite ease-in;
+  }
+  footer .rcol nav {
+    margin-top: 30px;
+    height: 140px;
+    width: 600px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+  footer .rcol nav li {
+    margin: 20px;
+    height: 20px;
+  }
+  footer .rcol nav li a {
+    font-size: 17px;
+    font-weight: 500;
+    text-decoration: none;
+    color: var(--textW-color);
+  }
+  footer .rcol nav li:hover {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+    -webkit-transition: 0.2s;
+    transition: 0.2s;
+  }
+  footer .rcol .C {
+    font-size: 10px;
+    font-weight: 400;
+    margin-top: 10px;
+    position: relative;
+    margin-left: 10px;
+    color: var(--textS-color);
+  }
+  footer .circle_4 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 500px;
+    height: 500px;
+    border-radius: 50%;
+    background-color: var(--circle-color);
+    position: absolute;
+    left: 100px;
+    top: 100px;
+  }
+}
