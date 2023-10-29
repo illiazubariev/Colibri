@@ -53,9 +53,32 @@ li {
             transform: translateY(0px);
   }
 }
+@-webkit-keyframes scroll {
+  100% {
+    background-position: 2000px 0px;
+  }
+}
+@keyframes scroll {
+  100% {
+    background-position: 2000px 0px;
+  }
+}
 header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-animation: scroll 100s linear infinite;
+          animation: scroll 100s linear infinite;
   background-image: url(../assets/images/star_bg.png);
   height: 750px;
+  width: 100%;
 }
 header .menu_1 {
   display: -webkit-box;
@@ -156,7 +179,10 @@ header .face li:nth-child(2) .button_1:hover img {
   header {
     background-image: url(../assets/images/star_bg.png);
     height: auto;
-    width: 600px;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
   }
   header .menu_1 {
     display: -webkit-box;
@@ -169,7 +195,7 @@ header .face li:nth-child(2) .button_1:hover img {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    width: 590px;
+    width: 200px;
     margin-left: auto;
     margin-right: auto;
   }
