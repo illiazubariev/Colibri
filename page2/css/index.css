@@ -179,7 +179,7 @@ header .face li:nth-child(2) .button_1:hover img {
   header {
     background-image: url(../assets/images/star_bg.png);
     height: auto;
-    width: 100%;
+    width: 600px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -278,7 +278,7 @@ header .face li:nth-child(2) .button_1:hover img {
             align-items: center;
     font-size: 16px;
     font-weight: 500;
-    margin-top: 60px;
+    margin-top: 10px;
   }
   header .face li:nth-child(2) .button_1 img {
     margin-left: 10px;
