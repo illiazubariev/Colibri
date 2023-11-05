@@ -26,15 +26,22 @@ li {
 
 header {
   background-color: var(--header-color);
-  height: 600px;
+  height: -webkit-min-content;
+  height: -moz-min-content;
+  height: min-content;
+  width: 100vw;
   z-index: 2;
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 header .menu {
   display: -webkit-box;
@@ -43,10 +50,11 @@ header .menu {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  width: 1170px;
-  height: 50px;
-  margin-left: auto;
-  margin-right: auto;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 80%;
+  height: 80%;
 }
 header .menu ul {
   display: -webkit-box;
@@ -54,11 +62,11 @@ header .menu ul {
   display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  margin-top: 31px;
+  margin-top: 50px;
 }
 header .menu ul li a {
   color: var(--textW-color);
-  font-size: 30px;
+  font-size: 40px;
   text-decoration: none;
 }
 header .menu ul li:hover {
@@ -71,28 +79,91 @@ header .menu ul:last-child li {
   margin-left: 30px;
 }
 header .menu ul:last-child li a {
-  font-size: 16px;
+  font-size: 20px;
 }
 header .face {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  position: absolute;
-  top: 80px;
+  position: relative;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  top: 50px;
+  width: 80%;
+  height: 80%;
 }
 header .face img {
   width: 100%;
   height: 100%;
 }
 header .face h1 {
-  font-size: 70px;
+  font-size: 90px;
   font-weight: 500;
   color: var(--textW-color);
   position: absolute;
-  left: 70px;
-  top: 200px;
+  left: 5%;
+  top: 30%;
 }
 
+@media screen and (max-width: 1200px) {
+  header .face h1 {
+    font-size: 70px;
+    top: 20%;
+  }
+}
+@media screen and (max-width: 900px) {
+  header .menu ul li a {
+    font-size: 20px;
+  }
+  header .menu ul:last-child li {
+    margin-left: 20px;
+  }
+  header .menu ul:last-child li a {
+    font-size: 14px;
+  }
+  header .face h1 {
+    font-size: 40px;
+    top: 20%;
+  }
+}
+@media screen and (max-width: 600px) {
+  header .menu {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  header .menu ul {
+    margin-top: 20px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  header .menu ul li {
+    margin-bottom: 10px;
+  }
+  header .menu ul li a {
+    font-size: 20px;
+  }
+  header .menu ul:last-child li {
+    margin-left: 20px;
+  }
+  header .menu ul:last-child li a {
+    font-size: 14px;
+  }
+  header .face {
+    width: 90%;
+  }
+  header .face h1 {
+    font-size: 30px;
+    top: 20%;
+  }
+}
 @-webkit-keyframes bounce {
   0% {
     -webkit-transform: translateY(0px);
@@ -107,7 +178,6 @@ header .face h1 {
             transform: translateY(0px);
   }
 }
-
 @keyframes bounce {
   0% {
     -webkit-transform: translateY(0px);
